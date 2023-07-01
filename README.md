@@ -1,5 +1,7 @@
 # todo_vue
 
+cd client
+
 ## Project setup
 ```
 npm install
@@ -19,6 +21,12 @@ npm run build
 ```
 npm run lint
 ```
+
+### Run server
+
+cd server
+
+python app.py
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
