@@ -55,6 +55,7 @@ export default {
         border-radius: 10px;
         margin-right: 10px;
         cursor:pointer;
+        user-select: none;
         
         img{
           width:20px;

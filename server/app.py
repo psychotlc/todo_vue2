@@ -17,7 +17,7 @@ def tasks():
 
   else:
     post_data = request.get_json()
-    _tasks.append({
+    _tasks.insert(0, {
       'taskID': uuid.uuid4().hex,
       'taskText': post_data.get('taskText')
     })
@@ -28,9 +28,9 @@ def remove_task(task_id):
   for task in _tasks:
     if task['taskID'] == task_id:
       _tasks.remove(task)
-      return jsonify({'success': True})
+      return True
   
-  return jsonify({'success': False})
+  return False
   
 
 if __name__ == "__main__":

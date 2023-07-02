@@ -88,6 +88,8 @@ export default {
 }
 </script>
 
+
+
 <style lang="scss">
   body{
     margin:0;
@@ -112,6 +114,7 @@ export default {
         margin:30px 0px 60px;
         width: 100%;
         display:flex;
+        user-select: none;
 
         input{
           border: 3px solid blue;
@@ -119,6 +122,7 @@ export default {
           text-align: center;
           font-size: 2em;
           width: 70%;
+          
         }
 
         button{
